@@ -68,61 +68,74 @@
              </small>
                   </p>
               
-                
+                 <h2>Developer Info</h2>
                 <h3>How to get the source code</h3>
                 <pre><code>$ git clone https://github.com/lemonflow/lemonflow.git</code></pre>
                 <pre><code>$ git clone https://github.com/lemonflow/lemonflow.js.git</code></pre>
                 <h3>Tags and Update History</h3>
                 <ul>
                     <li>
-                        <a href="https://github.com/lemonflow/lemonflow/tree/v248">
-                            <span class="tag-name">v248</span>- changed UIDataGroup to have common interface to starling or flex renderers</a>
+                            <span class="tag-name">2.48</span>  (
+                         <a href="https://github.com/lemonflow/lemonflow/tree/v248" rel="nofollow">
+                            <span></span>tree</a> |
                         <a href="/lemonflow/lemonflow/archive/v248.zip" rel="nofollow">
-                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                            <span></span>zip</a> )
+                            <br>changed UIDataGroup to have common interface to starling or flex renderers
                     </li>
                     <li>
-                        <a href="https://github.com/lemonflow/lemonflow/tree/v247">
-                            <span class="tag-name">v247</span>- added flare package and support for flare data structures and renderers</a>
+                            <span class="tag-name">2.47</span>  (
+                           
+                         <a href="https://github.com/lemonflow/lemonflow/tree/v247" rel="nofollow">
+                            <span></span>tree</a> |
                         <a href="/lemonflow/lemonflow/archive/v247.zip" rel="nofollow">
-                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                            <span></span>zip</a> )
+                             <br>added flare package and support for flare data structures and renderers
                     </li>
                     <li>
-                        <a href="https://github.com/lemonflow/lemonflow/tree/v246">
-                            <span class="tag-name">v246</span>- added manual mxml loader; added starling framework; added manifests that instantiate sprites using Starling (Stage3D-backed) render surfaces; some changes to invalidate displaylist; added UIGroupStarling</a>
+                            <span class="tag-name">2.46</span>  (
+                           
+                         <a href="https://github.com/lemonflow/lemonflow/tree/v246" rel="nofollow">
+                            <span></span>tree</a> |
                         <a href="/lemonflow/lemonflow/archive/v246.zip" rel="nofollow">
-                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                            <span></span>zip</a> )
+                             <br>added manual mxml loader; added starling framework; added manifests that instantiate sprites using Starling (Stage3D-backed) render surfaces; some changes to invalidate displaylist; added UIGroupStarling
                     </li>
                     <li>
-                        <a href="https://github.com/lemonflow/lemonflow/tree/v245">
-                            <span class="tag-name">v245</span>- added changes for lemonflow made in CES (kinect freehand gesture events)</a>
+                            <span class="tag-name">2.45</span>  (
+                         <a href="https://github.com/lemonflow/lemonflow/tree/v245" rel="nofollow">
+                            <span></span>tree</a> |
                         <a href="/lemonflow/lemonflow/archive/v245.zip" rel="nofollow">
-                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                            <span></span>zip</a> )
+                             <br>added changes for lemonflow made in CES (kinect freehand gesture events)
                     </li>
                     <li>
-                        <a href="https://github.com/lemonflow/lemonflow/tree/v244">
-                            <span class="tag-name">v244</span>- started some initial implementation of the composite ui components (they will be state-driven and adopt the concept of state model from ComponentController) - fixed some bugs in the UIDataGroup; setting dataprovider assumes that it will load later and then trigger UI item render plugging; however in case the dataprovider immediatly is available, then itemrenderers will not get triggered to load data. - added load from bytearray method to ModelBase - needed for embedded xml models</a>
-                        <span class="mini-icon mini-icon-download-zip"></span>
+                            <span class="tag-name">2.44</span>  (
+                         <a href="https://github.com/lemonflow/lemonflow/tree/v244" rel="nofollow">
+                            <span></span>tree</a> |
                         <a href="/lemonflow/lemonflow/archive/v244.zip" rel="nofollow">
-                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                            <span></span>zip</a> )
+                             <br>started some initial implementation of the composite ui components (they will be state-driven and adopt the concept of state model from ComponentController) - fixed some bugs in the UIDataGroup; setting dataprovider assumes that it will load later and then trigger UI item render plugging; however in case the dataprovider immediatly is available, then itemrenderers will not get triggered to load data. - added load from bytearray method to ModelBase - needed for embedded xml models
                     </li>
                     <li>
-                        <a href="https://github.com/lemonflow/lemonflow/tree/v243">
-                            <span class="tag-name">v243</span>- Initial Version under Git Version Control</a>
+                            <span class="tag-name">2.43</span>  (
+                         <a href="https://github.com/lemonflow/lemonflow/tree/v243" rel="nofollow">
+                            <span></span>tree</a> |
                         <a href="/lemonflow/lemonflow/archive/v243.zip" rel="nofollow">
-                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                            <span></span>zip</a> )
+                              <br>Initial Version under Git Version Control
                     </li>
                 </ul>
-                <h3>Versions & Source Language</h3>
-                <p>Three versions of lemonflow exist, mainly contributing the same functionionality but for different languages/runtimes:</p>
+                <h3>Source Code Languages & Dependencies</h3>
+                <p>Four implementations of lemonflow exist. The most complete one is the ActionsScript branch, requiring Flash/AIR API. Javascript is the language, which the focus is on right now - we envision to reduce dependencies on proprietary modules</p>
                 <ul>
                     <li>Java (depricated):
-                        <br>compiles for and runs with adobe flash runtime, AVM2</li>
+                        <br>depends on the Java SWT GUI framework (Eclipse)</li>
                     <li>JavaScript-QT (experimental):
-                        <br>runs with javascript runtime provided as integrated engine for QML Runtime (QT version 5.0.1)</li>
+                        <br>runs with javascript runtime provided as integrated engine for QML Runtime; requires QT version minimum 5.0.1</li>
                     <li>ActionScript:
-                        <br>compiles for and runs with adobe flash runtime, AVM2</li>
+                        <br>compiles for and runs with adobe flash runtime, AVM2. Runs in Adobe AIR (tested versions up to AIR 3.3) and Flash Player (tested up to 11.3)</li>
                     <li>JavaScript:
-                        <br>runs with javascript runtime for ECMAScript 5 - e.g. v8; the JS source files in this repo are automatically generated from TypeScript; TypeScript is a superset of JavaScript which roughly goes in line with ECMAScript 6</li>
+                        <br>ECMAScript 5; runs with a javascript runtime, e.g. Google V8; renders onto WebGL surface, HTML5 Canvas or divs. The JS source files in this repo are automatically generated from TypeScript; TypeScript is a superset of JavaScript which roughly goes in line with ECMAScript 6</li>
                 </ul>
                 <h2>Framework Concepts</h2>
                 <h3>UI Flow Model</h3>
@@ -132,12 +145,12 @@
   changes:
   [ 
     {  
-       type:"viewAttached", 	
+       type:"viewAttached",   
        transition:[],  
        newState:"main"
     },
     {  
-       type:NInputEvent.DOWN_RELEASED,	
+       type:NInputEvent.DOWN_RELEASED,  
        transition:[TransitionMainToBar], 
        newState:"bar"
     }
@@ -146,9 +159,9 @@
 {
   state:"bar", 
   changes:
-  [ 	
+  [   
     {
-      type:[NInputEvent.UP_RELEASED, NInputEvent.BACK_RELEASED],	
+      type:[NInputEvent.UP_RELEASED, NInputEvent.BACK_RELEASED],  
       transition:[TransitionBarToMain], 
       newState:"main"
     }
