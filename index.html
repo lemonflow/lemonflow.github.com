@@ -126,14 +126,14 @@
                     </li>
                 </ul>
                 <h3>Source Code Languages & Dependencies</h3>
-                <p>Four implementations of lemonflow exist. The most complete one is the ActionsScript branch, requiring Flash/AIR API. Javascript is the language, which the focus is on right now - we envision to reduce dependencies on proprietary modules</p>
+                <p>Four implementations of lemonflow exist. The most complete one is the ActionsScript branch, requiring Flash/AIR for all graphics rendering. Javascript is the language, which the focus is on right now - we envision to reduce dependencies on proprietary modules</p>
                 <ul>
                     <li>Java (depricated):
                         <br>depends on the Java SWT GUI framework (Eclipse)</li>
                     <li>JavaScript-QT (experimental):
                         <br>runs with javascript runtime provided as integrated engine for QML Runtime; requires QT version minimum 5.0.1</li>
                     <li>ActionScript:
-                        <br>compiles for and runs with adobe flash runtime, AVM2. Runs in Adobe AIR (tested versions up to AIR 3.3) and Flash Player (tested up to 11.3)</li>
+                        <br>compiles for and runs with adobe flash runtime, AVM2. Runs in Adobe AIR (tested versions up to AIR 3.3) and Flash Player (tested up to 11.3); lemonflow can use Stage3D, Flex or Standard Flash DisplayObjects as Render Surfaces. Stage3D is GPU-accelerated  </li>
                     <li>JavaScript:
                         <br>ECMAScript 5; runs with a javascript runtime, e.g. Google V8; renders onto WebGL surface, HTML5 Canvas or divs. The JS source files in this repo are automatically generated from TypeScript; TypeScript is a superset of JavaScript which roughly goes in line with ECMAScript 6</li>
                 </ul>
