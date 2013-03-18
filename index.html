@@ -226,14 +226,23 @@ package lemonflow.components.menubar
 <h3>UI Components vs. Visualizations</h3>
 
         
-              <p> One aspect which lemonflow addreses is the common (quite artifical) distinction in software architecture for component-based user interface frameworks 
-                  (e.g. lists, menu bars, screens, tabs, side bars arranged in views) on one hand and then on the other hand frameworks for dynamic data visualizations (e.g. load data and apply
-                  a certain tree layout, encode values onto y-axis, force-based layout of nodes, draw pie chart based on data). 
+              <p> Lemonflow addreses a common (quite artifical) distinction occurant in software architecture of most frameworks. Some frameworks focus on component-based 
+                  structure of the UI in views, which the developer/designer can arrange and connect, e.g. lists, menu bars, screens, tabs, side bars arranged in views; 
+                  Programmatic rules get implemented, such as if user clicks on element x, then go to next screen. Mostly frameworks use event-based handlers attached to buttons or views
+                  to navigate through the views with components. Individual components are bound to data, e.g. a list will have a collection feeding each list entry, a button will
+                  have a label source which supplies the label textual content.
+                </p>
+                  <p>
+                  
+                  On the other end, we see frameworks for dynamic data visualizations. In these frameworks, the develoepr first loads
+                  a data collection (mostly from a file or database) and then applies a certain layout mechanism to visualize the data. Analytical abstraction
+                  can be created in an intermediate step. For example, well-known visualization would be a tree layout, pie chart etc. 
                   </p>
                   <p>
                   It might not be immediatly occurant why the underlying mechanisms in these frameworks are similar - but deep down there are common patterns 
-                  and lemonflow merges these approaches. This provides an advantage for the developer/designer who does not need to choose one or the other framework
-                   for specific use cases 
+                  and lemonflow merges these approaches: Both approaches use data, bound to visual elements. Both approaches calculate algorithmically the position/layout of several child elements
+                    for a given component based on the data fields. 
+                    
                   </p>
                   <p>
                   In many concrete modern user interfaces - the distinction between both types blurs, especially in the concept phase. 
