@@ -1,57 +1,224 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Lemonflow.github.com by lemonflow</title>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Lemonflow by lemonflow</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>
+                    <img src="img/icon.png" />  Lemonflow</h1>
+                <p>Framework for rapid creation of flexible, animated, and data-driven UIs & information visualizations</p>
+                <p class="view">
+                    <a href="https://github.com/lemonflow/lemonflow">View the Projects on GitHub
+                        <small>
+                            <br>lemonflow/lemonflow
+                            <br>lemonflow/lemonflow.js
+                            <br>lemonflow/lemonflow-server</small>
+                    </a>
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/zipball/master">Download
+                            <strong>ZIP File</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/tarball/master">Download
+                            <strong>TAR Ball</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow">View On
+                            <strong>GitHub</strong>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+            <section>
+                <h2>General</h2>
+                <p>lemonflow is a framework for structured holisitic prototyping of animated data-driven user interfaces & visualizations. The framework suits as a reference implementation of certain novel concepts. Exposing and applying such concepts in a easy and natural way is very helpful when creating holistic prototypes of the entire interactive experiences - i.e. going beyond single visualizations, components or screens. These structure and concepts serve as a guidance with in projects with changing ideas and quick reaction times.</p>
+                <p>lemonflow enables the developer to bind data sources to drive visual properties of the elements on screen. It is thereby inspired and based on the work of Jeffrey Heer and his visualization frameworks prefuse, flare, protovis and D3. lemonflow implements concepts from these frameworks and extends the framework in several aspects:</p>
+                <ul>
+                    <li>merge and intersect componentized UIs with free-flow visualizations</li>
+                    <li>adds states & transisitons, supports explicit animations (tweener-like)</li>
+                    <li>supports dynamic data collections and data streams</li>
+                    <li>build-in prediction/recommendation engine</li>
+                    <li>context-aware information processing</li>
+                </ul>
+                <h3>How to get the source code</h3>
+                <pre><code>$ git clone https://github.com/lemonflow/lemonflow.git</code></pre>
+                <pre><code>$ git clone https://github.com/lemonflow/lemonflow.js.git</code></pre>
+                <h3>Current Versions</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/tree/v248">
+                            <span class="tag-name">v248</span>- changed UIDataGroup to have common interface to starling or flex renderers</a>
+                        <a href="/lemonflow/lemonflow/archive/v248.zip" rel="nofollow">
+                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/tree/v247">
+                            <span class="tag-name">v247</span>- added flare package and support for flare data structures and renderers</a>
+                        <a href="/lemonflow/lemonflow/archive/v247.zip" rel="nofollow">
+                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/tree/v246">
+                            <span class="tag-name">v246</span>- added manual mxml loader; added starling framework; added manifests that instantiate sprites using Starling (Stage3D-backed) render surfaces; some changes to invalidate displaylist; added UIGroupStarling</a>
+                        <a href="/lemonflow/lemonflow/archive/v246.zip" rel="nofollow">
+                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/tree/v245">
+                            <span class="tag-name">v245</span>- added changes for lemonflow made in CES (kinect freehand gesture events)</a>
+                        <a href="/lemonflow/lemonflow/archive/v245.zip" rel="nofollow">
+                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/tree/v244">
+                            <span class="tag-name">v244</span>- started some initial implementation of the composite ui components (they will be state-driven and adopt the concept of state model from ComponentController) - fixed some bugs in the UIDataGroup; setting dataprovider assumes that it will load later and then trigger UI item render plugging; however in case the dataprovider immediatly is available, then itemrenderers will not get triggered to load data. - added load from bytearray method to ModelBase - needed for embedded xml models</a>
+                        <span class="mini-icon mini-icon-download-zip"></span>
+                        <a href="/lemonflow/lemonflow/archive/v244.zip" rel="nofollow">
+                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/lemonflow/lemonflow/tree/v243">
+                            <span class="tag-name">v243</span>- Initial Version under Git Version Control</a>
+                        <a href="/lemonflow/lemonflow/archive/v243.zip" rel="nofollow">
+                            <span class="mini-icon mini-icon-download-zip"></span>zip</a>
+                    </li>
+                </ul>
+                <h3>Versions & Source Language</h3>
+                <p>Three versions of lemonflow exist, mainly contributing the same functionionality but for different languages/runtimes:</p>
+                <ul>
+                    <li>Java (depricated):
+                        <br>compiles for and runs with adobe flash runtime, AVM2</li>
+                    <li>JavaScript-QT (experimental):
+                        <br>runs with javascript runtime provided as integrated engine for QML Runtime (QT version 5.0.1)</li>
+                    <li>ActionScript:
+                        <br>compiles for and runs with adobe flash runtime, AVM2</li>
+                    <li>JavaScript:
+                        <br>runs with javascript runtime for ECMAScript 5 - e.g. v8; the JS source files in this repo are automatically generated from TypeScript; TypeScript is a superset of JavaScript which roughly goes in line with ECMAScript 6</li>
+                </ul>
+                <h2>Framework Concepts</h2>
+                <h3>UI Flow Model</h3>
+<pre><code>
+{
+  state:"main", 
+  changes:
+  [ 
+    {  
+       type:"viewAttached", 	
+       transition:[],  
+       newState:"main"
+    },
+    {  
+       type:NInputEvent.DOWN_RELEASED,	
+       transition:[TransitionMainToBar], 
+       newState:"bar"
+    }
+  ]
+},
+{
+  state:"bar", 
+  changes:
+  [ 	
+    {
+      type:[NInputEvent.UP_RELEASED, NInputEvent.BACK_RELEASED],	
+      transition:[TransitionBarToMain], 
+      newState:"main"
+    }
+   ]
+}
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Lemonflow.github.com</h1>
-        <p>www documentation project pages</p>
-
-
-        <p class="view"><a href="https://github.com/lemonflow">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
 </code></pre>
+<p>...</p>
+<h3>Visual Operators (Custom Layouts)</h3>
+          
+  <pre><code>
+package lemonflow.components.menubar
+{
+  import lemonflow.ui.base.InteractiveOperator;
+  import lemonflow.ui.base.VisualItem;
+  
+  public class OperatorBarLayout extends lemonflow.ui.base.InteractiveOperator
+  {
+    protected var _view:* = null;
+    private var floatingIdx:Number = 0;
+    
+    public var itemSpacing:int = 87;
+    public var totalWidth:int = 940;
+    public var offsetLeft:int = 40;
+    public var offsetRight:int = 40;
+    
+    public var itemsWidths:Array = new Array();
+    public var itemsWidthSum:Number = 0;
+    public var itemsPositions:Array = new Array();
+    
+    public function OperatorBarLayout(v:*) {
+      _view = v;
+    }
+    
+    override public function update(slots:Vector.<VisualItem> = null, currentIdx:Number = 0, nextIndex:Number = 0):void {
+      itemsWidthSum = 0;
+      for(var i:int=0; i<_view.slots.length; i++) {
+        itemsWidths[i] = MenuBarItemRenderer(_view.renderers[i]).textMask.width;
+        itemsWidthSum+=itemsWidths[i];
+      }
+      
+      itemSpacing = _view.dataProvider.length>0?((totalWidth-itemsWidthSum)-(offsetLeft + offsetRight))/(_view.dataProvider.length-1):0;
+      
+      for(var k:int=0; k<_view.slots.length; k++) {
+        itemsPositions[k] = (k>0?(itemsWidths[k-1]+itemSpacing):0);
+        if(k>0) itemsPositions[k] += itemsPositions[k-1];
+      }
+      
+      for(var j:int=0; j<_view.slots.length; j++) {
+        floatingIdx = j-_view.currentIndex;
+        _view.slots[j].x =  offsetLeft+itemsPositions[j];
+        _view.slots[j].y =  _view.centerXYZ.y + 4;
+        _view.slots[j].visible = (floatingIdx<=5);
+      }
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+    }
+  }
+}
+</code></pre>        
+          
+          
+<h3>UI Components vs. Visualizations</h3>
 
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
+        
+              <p> One aspect which lemonflow addreses is the artifical distinction between component-based user interfaces with a certain information architecture and flow 
+                  (lists, menu bars, screens, tabs, side bars etc.) on one hand and then on the other hand dynamic data visualizations (e.g. a force-based layout of nodes). 
+                  It might not be immediatly occurant why this is similar, but deep down this is just an artifical distinction which can be painful for developers.
+                  In many concrete modern user interfaces - the distinction between both types of visual information displays blurs and is often matter of discussion in concept phases. 
+                  Authors want to use information visualizations as interactive components possible as their main metaphor of the entire UI. 
+                  lemonflow suits both needs and integrates them in structured fashion - component-based UI with flow as well as 
+                  document-based data visualizations. Both types of visual elements are implemented using the same basic patterns.
+              
+   
+ 
+          
 <h3>Authors and Contributors</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>In 2005-2013, Philipp Fischer (<a href="https://github.com/lemonflow" class="user-mention">@lemonflow</a>)</p>
 
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>This project is maintained by <a href="https://github.com/lemonflow">Philipp Fischer</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; v130317</small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
