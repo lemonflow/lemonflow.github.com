@@ -47,18 +47,28 @@
             </header>
             <section>
                 <h2>General</h2>
-                <p>lemonflow is a framework for holisitic prototyping of animated data-driven user interfaces & visualizations. 
-                A specific strength of this framework is the support for predictive context-aware processing of information for dynamic visual presentation.
+                <p>lemonflow is a framework for holisitic prototyping of animated data-driven user interfaces & visualizations. The structured & flexible approach
+                of lemonflow can be helpful to further develop and deliver the UI layer for entire applications on target platforms. 
+                A specific strength of this framework is the first-level support for animations & transition, dynamic data streams, 
+                and predictive context-aware processing of information.
              </p>
                 <p>
-                The framework provides as a reference implementation of certain novel concepts supporting this effort in a structured and validated approach. 
-                Exposing and applying such concepts in a easy and natural way can be very helpful when creating holistic prototypes of entire interactive experiences.
-                Structure also can help to keep pace in projects, when rapidly changing visual ideas have to be prototyped quickly.
+                The framework provides a reference implementation of certain novel concepts following well-researched and validated approaches. 
+                Having a tool to apply such powerful concepts in a easy, quick, and natural way can be very helpful to keep focused and organized, yet innovative and creative
+                 in fast-pace projects. Often creative developers
+                have to create small design sketches but then are required to scale up to entire interactive product experiences - ideas get added very rapidly and
+                the desire to see the "whole picture" is always there. Structure in source code and avoiding "spaghetti code" can help to keep pace in projects, 
+                when ideas flow and have to be prototyped/visualized quickly.
                 </p>
-                <p>lemonflow enables the developer to bind data sources to drive visual properties of the elements on screen. It is thereby inspired and based on the work of Jeffrey Heer and his visualization frameworks prefuse, flare, protovis and D3. lemonflow implements concepts from these frameworks and extends the framework in several aspects:</p>
+                <p>lemonflow in its core builds upon the idea that data sources/models are bound to visual properties of the elements on screen and drive their layout. 
+                It is thereby inspired and based on the scientific work of Jeffrey Heer and his practical visualization frameworks prefuse, flare, protovis and D3.
+                 </p>
+                <p>
+                  lemonflow extends these framework in certain aspects:</p>
                 <ul>
-                    <li>merge and intersect componentized UIs with free-flow visualizations</li>
-                    <li>adds states & transisitons, supports explicit animations (tweener-like)</li>
+                    <li>unified concept of componentized UIs & data visualizations</li>
+                    <li>adds states & transisitons</li>
+                    <li>supports tweener-like explicit animations</li>
                     <li>supports dynamic data collections and data streams</li>
                     <li>build-in prediction/recommendation engine</li>
                     <li>context-aware information processing</li>
@@ -126,7 +136,8 @@
                     </li>
                 </ul>
                 <h3>Source Code Languages & Dependencies</h3>
-                <p>Four implementations of lemonflow exist. The most complete one is the ActionsScript branch, requiring Flash/AIR for all graphics rendering. Javascript is the language, which the focus is on right now - we envision to reduce dependencies on proprietary modules</p>
+                <p>Four implementations of lemonflow exist. The most complete one is the ActionsScript branch, requiring Flash/AIR for all graphics rendering. 
+                Javascript is the language, where the focus lays right now - we envision to reduce dependencies on proprietary technology and build on webplatform technologies.</p>
                 <ul>
                     <li>Java (deprecated):
                         <br>depends on the Java SWT GUI framework (Eclipse)</li>
@@ -138,7 +149,12 @@
                         <br>ECMAScript 5; runs with a javascript runtime, e.g. Google V8; renders onto WebGL surface, HTML5 Canvas or divs. The JS source files in this repo are automatically generated from TypeScript; TypeScript is a superset of JavaScript which roughly goes in line with ECMAScript 6</li>
                 </ul>
                 <h2>Framework Concepts</h2>
-                <h3>UI Flow Model</h3>
+                <h3>UI Control & Flow</h3>
+                <h4>Within a view </h4>
+                
+The flow (focus or navigation) of a user interface view is defined as a JSON Model attached to the controller of this view. The json model triggers an automatic mechnism of adding and removing event listener
+to the respective items and views. This is not an exclusive approach - it is still possible to manually attach event listeners and triggered custom function calls.              
+    
 <pre><code>
 {
   state:"main", 
@@ -169,8 +185,10 @@
 }
 
 </code></pre>
+<h4>Focus Change between multiple views </h4>
+
 <p>...</p>
-<h3>Visual Operators (Custom Layouts)</h3>
+<h3>Dynamic Layouting - Visual Operators</h3>
           
   <pre><code>
 package lemonflow.components.menubar
