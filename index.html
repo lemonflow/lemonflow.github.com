@@ -226,15 +226,25 @@ package lemonflow.components.menubar
 <h3>UI Components vs. Visualizations</h3>
 
         
-              <p> Lemonflow addreses a common (quite artifical) distinction occurant in software architecture of most frameworks. Some frameworks focus on component-based 
-                  structure of the UI in views, which the developer/designer can arrange and connect, e.g. lists, menu bars, screens, tabs, side bars arranged in views; 
+              <p> Lemonflow addreses a common (quite artifical) distinction occurant in software architecture of component-based GUI frameworks and information visualization frameworks. 
+                  However, developers/designers tend to blur these boundaries in concept phases - often creating information visualization screens as interactive components - 
+                  sometimes visualization algorhithms suit as a basic visual metaphor for the an entire UI (e.g. gravitation model of items).
+                  -- insert picture --
+                  </p>
+                  <p>
+                  lemonflow suits both needs and integrates these two approaches in structured fashion. Later we will run through an example which illustrates the distiction
+                  
+                  
+                                    </p>
+                  <p>
+                  Component-based frameowrks structure the UI in views, which the developer/designer can layout with components and connect to each other, e.g. lists, menu bars, screens, tabs, side bars arranged in views; 
                   Programmatic rules get implemented, such as if user clicks on element x, then go to next screen. Mostly frameworks use event-based handlers attached to buttons or views
                   to navigate through the views with components. Individual components are bound to data, e.g. a list will have a collection feeding each list entry, a button will
                   have a label source which supplies the label textual content.
                 </p>
                   <p>
                   
-                  On the other end, we see frameworks for dynamic data visualizations. In these frameworks, the develoepr first loads
+                  On the other end, we see frameworks for dynamic data visualizations. In these frameworks, the designer/developer first loads
                   a data collection (mostly from a file or database) and then applies a certain layout mechanism to visualize the data. Analytical abstraction
                   can be created in an intermediate step. For example, well-known visualization would be a tree layout, pie chart etc. 
                   </p>
@@ -244,13 +254,7 @@ package lemonflow.components.menubar
                     for a given component based on the data fields. 
                     
                   </p>
-                  <p>
-                  In many concrete modern user interfaces - the distinction between both types blurs, especially in the concept phase. 
-                  Designers create information visualization screens as an interactive components - sometimes even as a visual metaphor for the entire UI (e.g. gravitation model of items).
-                  -- insert picture --
-                  </p>
-                  <p>
-                  lemonflow suits both needs and integrates them in structured fashion.</p>
+
               
    
  
